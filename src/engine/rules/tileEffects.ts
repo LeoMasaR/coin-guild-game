@@ -1,9 +1,4 @@
-import type { GameDataRef } from "./typesRuntime.js";
-
-/**
- * TileEffect は「止まった/通過した等のタイミングで状態を変える」処理単位。
- * 今は "LAND"（停止）だけで十分。将来 "PASS" など増やせる。
- */
+import type { GameRef } from "./typesRuntime.js";
 export type TileTrigger = "LAND";
 
 export interface TileEffect {
@@ -11,6 +6,7 @@ export interface TileEffect {
   trigger: TileTrigger;
   apply(ref: GameRef): void;
 }
+
 
 export interface GameRef {
   data: GameRefData;
