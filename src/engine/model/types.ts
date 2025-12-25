@@ -15,6 +15,23 @@ export type TileId =
   // South Africa
   | "GOLD" | "DIAM" | "MINT-SA" | "PORT-SA" | "TAR";
 
+// 追記：レシピID（あなたの確定レシピ）
+export type RecipeId =
+  | "WOOL_TEXTILE"
+  | "COTTON_TEXTILE"
+  | "SILK_GOODS"
+  | "TEA"
+  | "ARMS"
+  | "MACHINERY";
+
+// Action に追加
+export type Action =
+  | { type: "END_TURN" }
+  | { type: "ROLL_MOVE" }
+  | { type: "CHOOSE_EDGE"; to: Coord }
+  | { type: "PROCESS_FACTORY"; recipe: RecipeId } // ★追加
+  | { type: "NOOP" };
+
 
 export type Coord = readonly [number, number];
 
