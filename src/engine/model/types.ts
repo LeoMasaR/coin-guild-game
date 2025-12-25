@@ -6,10 +6,15 @@ export type MintID = string;
 
 export type AreaId = string;
 export type TileId =
+  // UK etc...
   | "TEX" | "COAL" | "WOOL" | "ARM" | "NEU" | "ORE"
   | "MKT" | "COP" | "BR" | "EX" | "ST"
   | "TAX" | "TTL" | "EVT" | "PAR" | "HQ" | "MINT"
-  | "DNG" | "PORT-A" | "PORT-M";
+  | "DNG" | "PORT-A" | "PORT-M"
+
+  // South Africa
+  | "GOLD" | "DIAM" | "MINT-SA" | "PORT-SA" | "TAR";
+
 
 export type Coord = readonly [number, number];
 
