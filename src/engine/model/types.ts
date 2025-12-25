@@ -13,7 +13,17 @@ export type TileId =
   | "DNG" | "PORT-A" | "PORT-M"
 
   // South Africa
-  | "GOLD" | "DIAM" | "MINT-SA" | "PORT-SA" | "TAR";
+  | "GOLD" | "DIAM" | "MINT-SA" | "PORT-SA" | "TAR"
+  
+  // India
+  | "SILV" | "COTTON" | "TEXT" | "TEA_LEAF"
+  | "PORT-W" | "PORT-E"
+  | "RAIL-W" | "RAIL-E"
+  | "BATTLE";
+
+  // Ottoman / connections
+  | "PORT-OT" | "WAR" | "CAR-P" | "CAR-RW";
+
 
 // 追記：レシピID（あなたの確定レシピ）
 export type RecipeId =
